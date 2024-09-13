@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function main() {
   const data = await fetchCSVWithProgress(
-    "../assets/data/extracted-data.csv",
+    "./assets/data/extracted-data.csv",
     updateLoadingProgress
   );
   const content = await data.text();
