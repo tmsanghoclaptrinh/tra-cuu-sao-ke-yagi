@@ -1,0 +1,41 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+#summary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#summary table {
+    text-align: right;
+}
+
+#summary td {
+    padding-left: 8px;
+}
+
+canvas#chart {
+    height: 300px !important;
+}
+
+#dt-length-0 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#dt-search-0 {
+    width: 100%;
+}
+
+#tblResult_wrapper {
+    margin-bottom: 20px;
+}
+
+#tblResult_wrapper>div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

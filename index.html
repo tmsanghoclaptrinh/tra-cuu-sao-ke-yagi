@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tra cứu dữ liệu sao kê</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/plug-ins/2.1.6/features/searchHighlight/dataTables.searchHighlight.css"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>
+        <center>Tra cứu dữ liệu sao kê</center>
+        <center>Ủng hộ đồng bào bị ảnh hưởng bởi cơn bão Yagi</center>
+      </h1>
+      <center>
+        <img src="../assets/images/flag-of-vietnam.png" width="100" />
+      </center>
+      <h3>
+        <center>
+          Dữ liệu cung cấp bởi
+          <a
+            href="https://www.facebook.com/thongtinchinhphu/posts/pfbid03YkRTKZ5WjeHwBavPQbP7EShonj9tTExgY26gNhvQdiEsbjdsLWnzWEoQE1bU9SBl"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >MTTQ</a
+          >. Học lập trình miễn phí tại
+          <a
+            href="https://www.facebook.com/clb.it.ngoctao"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >CLB Lập trình - THPT Ngọc Tảo</a
+          >
+        </center>
+      </h3>
+      <h3>
+        <center>
+          Lưu ý: Dữ liệu chỉ trong phạm vi từ 01/09/2024 đến 10/09/2024.
+        </center>
+        <center>Chúng tôi sẽ cập nhật khi có dữ liệu mới từ MTTQ</center>
+      </h3>
+
+      <div id="summary"></div>
+
+      <h3>Bảng thống kê</h3>
+      <table
+        id="tblResult"
+        class="table table-striped"
+        cellspacing="0"
+        width="100%"
+      >
+        <thead>
+          <tr>
+            <th>Ngày giao dịch</th>
+            <th>Mã giao dịch</th>
+            <th>Số tiền</th>
+            <th>Chi tiết giao dịch</th>
+            <th>Vị trí trang PDF</th>
+          </tr>
+        </thead>
+      </table>
+
+      <div id="loading">Đang tải dữ liệu...</div>
+
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.datatables.net/2.1.6/js/dataTables.min.js"></script>
+      <script src="https://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+      <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+      <script src="https://cdn.datatables.net/plug-ins/2.1.6/features/searchHighlight/dataTables.searchHighlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+      <script src="./src/index.js"></script>
+    </main>
+  </body>
+</html>
